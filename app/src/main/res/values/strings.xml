@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">Japanese Diet</string>
+
+    <string name="breakfast1">Black coffee with no sugar</string>
+    <string name="breakfast2">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast3">Black coffee with no sugar</string>
+    <string name="breakfast4">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast5">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
+    <string name="breakfast6">Black coffee with no sugar</string>
+    <string name="breakfast7">Green tea with no sugar</string>
+    <string name="breakfast8">Green tea with no sugar</string>
+    <string name="breakfast9">Black coffee with no sugar</string>
+    <string name="breakfast10">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
+    <string name="breakfast11">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast12">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast13">Black coffee with no sugar</string>
+    <string name="breakfast14">Black coffee with no sugar</string>
+
+    <string name="lunch1">2 boiled eggs,fresh cabbage with vegetable oil and a glass of tomato juice</string>
+    <string name="lunch2">200 g of scalded or fried fish, fresh cabbage with vegetable oil</string>
+    <string name="lunch3">Courgettes/aubergines fried with vegetable oil, quantity does not matter</string>
+    <string name="lunch4">200 g of boiled or steamed fish and a glass of tomato juice</string>
+    <string name="lunch5">500 g of boiled or steamed fish and a glass of tomato juice</string>
+    <string name="lunch6">500g of boiled chicken with no salt with a salad made of fresh cabbage and carrots with vegetable oil</string>
+    <string name="lunch7">200 g of boiled beef with no salt, 200g of any fruits</string>
+    <string name="lunch8">200 g of boiled beef with no salt, 200g of any fruits</string>
+    <string name="lunch9">50g of cheese, three small carrots with vegetable oil and one boiled egg</string>
+    <string name="lunch10">200 g of boiled or steamed fish and a glass of tomato juice</string>
+    <string name="lunch11">Courgettes/aubergines fried with vegetable oil, quantity does not matter</string>
+    <string name="lunch12">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
+    <string name="lunch13">2 boiled eggs, fresh cabbage with vegetable oil and a glass of tomato juice</string>
+    <string name="lunch14">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
+
+    <string name="supper1">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
+    <string name="supper2">200 g of boiled beef with no salt and a glass of kefir</string>
+    <string name="supper3">200 g of boiled beef with no salt, raw cabbage with vegetable oil and two boiled eggs</string>
+    <string name="supper4">200g of any fruits</string>
+    <string name="supper5">200g of any fruits</string>
+    <string name="supper6">fresh small sized carrot with vegetable oil and two boiled eggs</string>
+    <string name="supper7">Any version of the dinner from the diet of the previous days (except the third)</string>
+    <string name="supper8">Any version of the dinner from the diet of the previous days (except the third)</string>
+    <string name="supper9">200g of any fruits</string>
+    <string name="supper10">200g of any fruits</string>
+    <string name="supper11">200 g of boiled beef with no salt, a glass of kefir</string>
+    <string name="supper12">200g of any fruits</string>
+    <string name="supper13">200 g of boiled or steamed fish</string>
+    <string name="supper14">200 g of boiled beef with no salt and a glass of kefir</string>
+
+
+    <string name="breakfast2_1">Black coffee with no sugar</string>
+    <string name="breakfast2_2">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast2_3">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast2_4">Black coffee with no sugar</string>
+    <string name="breakfast2_5">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
+    <string name="breakfast2_6">Black coffee with no sugar</string>
+    <string name="breakfast2_7">Green tea with no sugar</string>
+    <string name="breakfast2_8">Black coffee with no sugar</string>
+    <string name="breakfast2_9">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
+    <string name="breakfast2_10">Black coffee with no sugar</string>
+    <string name="breakfast2_11">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast2_12">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast2_13">Black coffee with no sugar</string>
+
+    <string name="lunch2_1">2 boiled eggs, fresh cabbage with vegetable oil and a glass of tomato juice</string>
+    <string name="lunch2_2">200 g of boiled or steamed fish, salad made of fresh cabbage and carrots with vegetable oil (150g)</string>
+    <string name="lunch2_3">1 courgette fried with vegetable oil</string>
+    <string name="lunch2_4">1 boiled egg, 100 g grated fresh carrot with vegetable oil, 15 g of cheese</string>
+    <string name="lunch2_5">200 g of boiled or steamed fish and a glass of tomato juice</string>
+    <string name="lunch2_6">300 g of boiled chicken with no salt, salad made of fresh cabbage and carrots with vegetable oil (100g)</string>
+    <string name="lunch2_7">200 g of boiled beef with no salt, 150 g of any fruits</string>
+    <string name="lunch2_8">250 g of boiled chicken with no salt, salad made of fresh cabbage and carrots with vegetable oil (150g)</string>
+    <string name="lunch2_9">200 g of boiled or steamed fish and a glass of tomato juice</string>
+    <string name="lunch2_10">1 boiled egg, 100 g carrot with vegetable oil, 15 g of cheese</string>
+    <string name="lunch2_11">1 courgette fried with vegetable oil</string>
+    <string name="lunch2_12">200 g of scalded or fried fish, fresh cabbage with vegetable oil</string>
+    <string name="lunch2_13">Dinner is not provided</string>
+
+    <string name="supper2_1">200 g of boiled or steamed fish</string>
+    <string name="supper2_2">100 g of boiled beef with no salt and a glass of tomato juice</string>
+    <string name="supper2_3">200 g of boiled beef with no salt, raw cabbage with vegetable oil and two boiled eggs</string>
+    <string name="supper2_4">200g of any fruits</string>
+    <string name="supper2_5">200g of any fruits</string>
+    <string name="supper2_6">2 boiled eggs, 100 g grated fresh carrot with vegetable oil</string>
+    <string name="supper2_7">2 boiled eggs, 100 g grated fresh carrot with vegetable oil</string>
+    <string name="supper2_8">2 boiled eggs, 150 g grated fresh carrot with vegetable oil</string>
+    <string name="supper2_9">200g of any fruits</string>
+    <string name="supper2_10">200g of any fruits</string>
+    <string name="supper2_11">200 g of boiled beef with no salt, raw cabbage with vegetable oil and two boiled eggs</string>
+    <string name="supper2_12">100 g of boiled beef with no salt and a glass of kefir</string>
+    <string name="supper2_13">2 boiled eggs, fresh cabbage with vegetable oil and a glass of tomato juice</string>
+
+
+    <string name="breakfast3_1">Black coffee with no sugar</string>
+    <string name="breakfast3_2">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast3_3">Black coffee with no sugar</string>
+    <string name="breakfast3_4">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast3_5">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
+    <string name="breakfast3_6">Black coffee with no sugar</string>
+    <string name="breakfast3_7">Green tea with no sugar</string>
+    <string name="breakfast3_8">Green tea with no sugar</string>
+    <string name="breakfast3_9">Black coffee with no sugar</string>
+
+    <string name="lunch3_1">2 boiled eggs, fresh cabbage with vegetable oil and a glass of tomato juice</string>
+    <string name="lunch3_2">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
+    <string name="lunch3_3">1 boiled egg, 150 g grated fresh carrot with vegetable oil</string>
+    <string name="lunch3_4">1 courgette fried with vegetable oil, 1 apple</string>
+    <string name="lunch3_5">200 g of boiled or steamed fish and a glass of tomato juice</string>
+    <string name="lunch3_6">300 g of boiled chicken with no salt, salad made of fresh cabbage and carrots with vegetable oil (150g)</string>
+    <string name="lunch3_7">200 g of boiled beef with no salt, 200g of any fruits</string>
+    <string name="lunch3_8">200 g of boiled beef with no salt, 2 apples or 1 orange</string>
+    <string name="lunch3_9">150 g of boiled chicken with no salt, 2 boiled eggs, salad made of fresh cabbage and carrots with vegetable oil (150g)</string>
+
+    <string name="supper3_1">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
+    <string name="supper3_2">200 g of boiled beef with no salt and a glass of kefir</string>
+    <string name="supper3_3">2 apples</string>
+    <string name="supper3_4">200 g of boiled beef with no salt, 2 boiled eggs, 150 g fresh cabbage with vegetable oil</string>
+    <string name="supper3_5">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
+    <string name="supper3_6">2 boiled eggs, salad made of fresh cabbage and carrots with vegetable oil</string>
+    <string name="supper3_7">Any version of the dinner from the diet of the previous days</string>
+    <string name="supper3_8">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
+    <string name="supper3_9">200 g grated fresh carrot with vegetable oil</string>
+
+    <string name="breakfast4_1">Black coffee with no sugar</string>
+    <string name="breakfast4_2">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast4_3">Black coffee with no sugar</string>
+    <string name="breakfast4_4">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast4_5">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
+    <string name="breakfast4_6">Black coffee with no sugar</string>
+    <string name="breakfast4_7">Green tea with no sugar</string>
+
+    <string name="lunch4_1">2 boiled eggs, fresh cabbage with vegetable oil and a glass of tomato juice</string>
+    <string name="lunch4_2">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
+    <string name="lunch4_3">1 boiled egg, 150 g grated fresh carrot with vegetable oil</string>
+    <string name="lunch4_4">1 courgette fried with vegetable oil, 1 apple</string>
+    <string name="lunch4_5">200 g of boiled or steamed fish and a glass of tomato juice</string>
+    <string name="lunch4_6">300 g of boiled chicken with no salt, salad made of fresh cabbage and carrots with vegetable oil (150g)</string>
+    <string name="lunch4_7">200 g of boiled beef with no salt, 200g of any fruits</string>
+
+    <string name="supper4_1">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
+    <string name="supper4_2">200 g of boiled beef with no salt and a glass of kefir</string>
+    <string name="supper4_3">2 apples</string>
+    <string name="supper4_4">200 g of boiled beef with no salt, raw cabbage with vegetable oil and two boiled eggs</string>
+    <string name="supper4_5">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
+    <string name="supper4_6">2 boiled eggs, grated fresh carrot with vegetable oil</string>
+    <string name="supper4_7">Any version of the dinner from the diet of the previous days</string>
+</resources>
