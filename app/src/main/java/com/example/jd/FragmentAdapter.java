@@ -3,10 +3,9 @@ package com.example.jd;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentStatePagerAdapter;
 
 public class FragmentAdapter extends FragmentPagerAdapter {
-    private String tabTitles[] = new String[] { "About", "Plans" };
+    private String tabTitles[] = new String[]{"About", "Plans"};
 
     public FragmentAdapter(FragmentManager fm) {
         super(fm);
@@ -28,7 +27,8 @@ public class FragmentAdapter extends FragmentPagerAdapter {
         return 2;
     }
 
-    @Override public CharSequence getPageTitle(int position) {
+    @Override
+    public CharSequence getPageTitle(int position) {
         // генерируем заголовок в зависимости от позиции
         return tabTitles[position];
     }

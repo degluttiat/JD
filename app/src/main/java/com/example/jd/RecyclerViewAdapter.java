@@ -38,6 +38,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         viewHolder.textSupper.setText(itemClass.getTextSupper());
         viewHolder.itemImage.setImageResource(itemClass.getImage());
         viewHolder.linearLayout2.setVisibility(View.GONE);
+
     }
 
     @Override
@@ -54,7 +55,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public ImageView itemImage;
         public LinearLayout linearLayout;
         public LinearLayout linearLayout2;
-        public LinearLayout line;
+        public LinearLayout line; 
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -70,7 +71,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         @Override
         public void onClick(View v) {
-            if (linearLayout2.getVisibility() == View.VISIBLE) {
+            if (linearLayout2.getVisibility() == View.VISIBLE){
                 linearLayout2.setVisibility(View.GONE);
             } else {
                 TransitionManager.beginDelayedTransition(line);
