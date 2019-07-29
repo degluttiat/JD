@@ -10,16 +10,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.jjoe64.graphview.GraphView;
-import com.jjoe64.graphview.series.DataPoint;
-import com.jjoe64.graphview.series.LineGraphSeries;
+import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.AxisBase;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class FragmentRecyclerView extends Fragment implements View.OnClickListener {
 
     public static final String ARGUMENT_PAGE_NUMBER = "ARGUMENT_PAGE_NUMBER";
-    private GraphView mGraph;
+    private LineChart chart;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -45,7 +50,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(getList(listNumber));
         recyclerView.setAdapter(adapter);
 
-        mGraph = rootView.findViewById(R.id.graph);
+        chart = rootView.findViewById(R.id.chart);
         updateGraph();
 
 
@@ -53,14 +58,36 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
     }
 
     private void updateGraph() {
-        LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[] {
-                new DataPoint(0, 1),
-                new DataPoint(1, 5),
-                new DataPoint(2, 3),
-                new DataPoint(3, 2),
-                new DataPoint(4, 6)
-        });
-        mGraph.addSeries(series);
+        List<Entry> entries = new ArrayList<>();
+        entries.add(new Entry(0, 63.7f));
+        entries.add(new Entry(1, 61));
+        entries.add(new Entry(2, 60));
+        entries.add(new Entry(3, 59));
+        entries.add(new Entry(4, 63));
+        entries.add(new Entry(5, 61));
+        entries.add(new Entry(6, 60));
+        entries.add(new Entry(7, 59));
+
+        LineDataSet dataSet = new LineDataSet(entries, "Label");
+
+        IAxisValueFormatter formatter = new IAxisValueFormatter() {
+
+            @Override
+            public String getFormattedValue(float value, AxisBase axis) {
+                int v = (int)value + 1;
+                return String.valueOf(v);
+            }
+
+        };
+        XAxis xAxis = chart.getXAxis();
+        xAxis.setGranularity(1f); // minimum axis-step (interval) is 1
+        xAxis.setValueFormatter(formatter);
+
+        LineData lineData = new LineData(dataSet);
+        chart.setData(lineData);
+        chart.setDrawBorders(true);
+        chart.invalidate(); // refresh
+
     }
 
     private ArrayList<ItemClass> getList(int listNumber) {

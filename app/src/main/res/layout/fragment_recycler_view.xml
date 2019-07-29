@@ -17,8 +17,8 @@
 
         </android.support.v7.widget.RecyclerView>
 
-        <com.jjoe64.graphview.GraphView
-            android:id="@+id/graph"
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
             android:layout_width="match_parent"
             android:layout_height="200dip" />
     </LinearLayout>
