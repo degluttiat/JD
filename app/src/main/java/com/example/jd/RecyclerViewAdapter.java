@@ -1,5 +1,7 @@
 package com.example.jd;
 
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.transition.TransitionManager;
@@ -17,9 +19,11 @@ import java.util.ArrayList;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
     ArrayList<ItemClass> list;
+    FragmentRecyclerView fragmentRecyclerView;
 
-    public RecyclerViewAdapter(ArrayList<ItemClass> list) {
+    public RecyclerViewAdapter(ArrayList<ItemClass> list, FragmentRecyclerView fragmentRecyclerView) {
         this.list = list;
+        this.fragmentRecyclerView = fragmentRecyclerView;
     }
 
 
@@ -89,7 +93,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     }
                     break;
                 case R.id.buttonOk:
-
+                    SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(v.getContext()).edit();
+                    editor.putString("key" + getAdapterPosition(), editWeight.getText().toString());
+                    editor.commit();
+                    fragmentRecyclerView.updateGraph();
                     break;
 
             }

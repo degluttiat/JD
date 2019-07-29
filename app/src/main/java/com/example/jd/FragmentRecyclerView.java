@@ -1,7 +1,9 @@
 package com.example.jd;
 
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
@@ -47,26 +49,28 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
 
         int listNumber = getArguments().getInt(ARGUMENT_PAGE_NUMBER);
 
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(getList(listNumber));
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(getList(listNumber), this);
         recyclerView.setAdapter(adapter);
 
         chart = rootView.findViewById(R.id.chart);
         updateGraph();
 
-
         return rootView;
     }
 
-    private void updateGraph() {
+    public void updateGraph() {
         List<Entry> entries = new ArrayList<>();
-        entries.add(new Entry(0, 63.7f));
-        entries.add(new Entry(1, 61));
-        entries.add(new Entry(2, 60));
-        entries.add(new Entry(3, 59));
-        entries.add(new Entry(4, 63));
-        entries.add(new Entry(5, 61));
-        entries.add(new Entry(6, 60));
-        entries.add(new Entry(7, 59));
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(chart.getContext());
+
+        for (int i = 0; i < 14; i++) {
+            if (prefs.contains("key" + i)) {
+                float num = Float.parseFloat(prefs.getString("key" + i, "0.0"));
+                if (num > 0.0) {
+                    entries.add(new Entry(i, num));
+                }
+            }
+        }
 
         LineDataSet dataSet = new LineDataSet(entries, "Label");
 
@@ -74,7 +78,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
 
             @Override
             public String getFormattedValue(float value, AxisBase axis) {
-                int v = (int)value + 1;
+                int v = (int) value + 1;
                 return String.valueOf(v);
             }
 
