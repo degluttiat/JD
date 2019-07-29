@@ -87,6 +87,7 @@
             android:text="Введите ваш вес: " />
 
         <EditText
+            android:id="@+id/editWeight"
             android:layout_width="70dp"
             android:layout_height="wrap_content" />
 
@@ -96,6 +97,7 @@
             android:text=" кг   "/>
 
         <Button
+            android:id="@+id/buttonOk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="OK"/>

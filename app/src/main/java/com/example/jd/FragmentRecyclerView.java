@@ -19,6 +19,7 @@ import java.util.ArrayList;
 public class FragmentRecyclerView extends Fragment implements View.OnClickListener {
 
     public static final String ARGUMENT_PAGE_NUMBER = "ARGUMENT_PAGE_NUMBER";
+    private GraphView mGraph;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -44,7 +45,14 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(getList(listNumber));
         recyclerView.setAdapter(adapter);
 
-        GraphView graph = rootView.findViewById(R.id.graph);
+        mGraph = rootView.findViewById(R.id.graph);
+        updateGraph();
+
+
+        return rootView;
+    }
+
+    private void updateGraph() {
         LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[] {
                 new DataPoint(0, 1),
                 new DataPoint(1, 5),
@@ -52,10 +60,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
                 new DataPoint(3, 2),
                 new DataPoint(4, 6)
         });
-        graph.addSeries(series);
-
-
-        return rootView;
+        mGraph.addSeries(series);
     }
 
     private ArrayList<ItemClass> getList(int listNumber) {

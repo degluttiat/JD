@@ -6,6 +6,8 @@ import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -55,7 +57,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public ImageView itemImage;
         public LinearLayout linearLayout;
         public LinearLayout linearLayout2;
-        public LinearLayout line; 
+        public LinearLayout line;
+        private final EditText editWeight;
+        private final Button buttonOk;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -67,15 +71,27 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             linearLayout.setOnClickListener(this);
             linearLayout2 = itemView.findViewById(R.id.linear2);
             line = itemView.findViewById(R.id.line);
+            editWeight = itemView.findViewById(R.id.editWeight);
+            buttonOk = itemView.findViewById(R.id.buttonOk);
+            buttonOk.setOnClickListener(this);
+
         }
 
         @Override
         public void onClick(View v) {
-            if (linearLayout2.getVisibility() == View.VISIBLE){
-                linearLayout2.setVisibility(View.GONE);
-            } else {
-                TransitionManager.beginDelayedTransition(line);
-                linearLayout2.setVisibility(View.VISIBLE);
+            switch (v.getId()) {
+                case R.id.linear:
+                    if (linearLayout2.getVisibility() == View.VISIBLE) {
+                        linearLayout2.setVisibility(View.GONE);
+                    } else {
+                        TransitionManager.beginDelayedTransition(line);
+                        linearLayout2.setVisibility(View.VISIBLE);
+                    }
+                    break;
+                case R.id.buttonOk:
+
+                    break;
+
             }
 
         }
