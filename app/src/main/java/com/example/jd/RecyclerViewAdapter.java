@@ -37,14 +37,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerViewAdapter.ViewHolder viewHolder, int i) {
-        ItemClass itemClass = list.get(i);
+    public void onBindViewHolder(@NonNull RecyclerViewAdapter.ViewHolder viewHolder, int position) {
+        ItemClass itemClass = list.get(position);
         viewHolder.textBreakfast.setText(itemClass.getTextBreakfast());
         viewHolder.textLunch.setText(itemClass.getTextLunch());
         viewHolder.textSupper.setText(itemClass.getTextSupper());
         viewHolder.itemImage.setImageResource(itemClass.getImage());
         viewHolder.linearLayout2.setVisibility(View.GONE);
 
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(viewHolder.itemImage.getContext());
+        String weihgt = prefs.getString("key" + position, "0.0");
+        if (!weihgt.equals("0.0")) {
+            viewHolder.editWeight.setText(weihgt);
+        }
     }
 
     @Override
