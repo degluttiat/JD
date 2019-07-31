@@ -72,7 +72,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
             }
         }
 
-        LineDataSet dataSet = new LineDataSet(entries, "Label");
+        LineDataSet dataSet = new LineDataSet(entries, "Weight");
 
         IAxisValueFormatter formatter = new IAxisValueFormatter() {
 

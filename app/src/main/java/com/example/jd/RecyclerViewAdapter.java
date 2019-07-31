@@ -5,6 +5,7 @@ import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.transition.TransitionManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -98,10 +99,20 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     }
                     break;
                 case R.id.buttonOk:
-                    SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(v.getContext()).edit();
-                    editor.putString("key" + getAdapterPosition(), editWeight.getText().toString());
-                    editor.commit();
-                    fragmentRecyclerView.updateGraph();
+                    SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(v.getContext());
+                    SharedPreferences.Editor editor = prefs.edit();
+                    String editText = editWeight.getText().toString();
+                    if (!editText.equals("")) {
+                        editor.putString("key" + getAdapterPosition(), editText);
+                        editor.commit();
+                        fragmentRecyclerView.updateGraph();
+                    } else {
+                        if (prefs.contains("key" + getAdapterPosition())){
+                            editor.remove("key" + getAdapterPosition());
+                            editor.commit();
+                            fragmentRecyclerView.updateGraph();
+                        }
+                    }
                     break;
 
             }
