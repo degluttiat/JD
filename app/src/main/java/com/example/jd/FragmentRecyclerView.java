@@ -27,13 +27,14 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
 
     public static final String ARGUMENT_PAGE_NUMBER = "ARGUMENT_PAGE_NUMBER";
     private LineChart chart;
+    private RecyclerView recyclerView;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
                 R.layout.fragment_recycler_view, container, false);
 
-        RecyclerView recyclerView = rootView.findViewById(R.id.content);
+        recyclerView = rootView.findViewById(R.id.content);
 
         boolean isPortrait = getResources().getConfiguration().orientation
                 == Configuration.ORIENTATION_PORTRAIT;
@@ -47,15 +48,18 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         recyclerView.setLayoutManager(manager);
         recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(), DividerItemDecoration.VERTICAL));
 
-        int listNumber = getArguments().getInt(ARGUMENT_PAGE_NUMBER);
-
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(getList(listNumber), this);
-        recyclerView.setAdapter(adapter);
+        createOrRefreshAdapter();
 
         chart = rootView.findViewById(R.id.chart);
         updateGraph();
 
         return rootView;
+    }
+
+    public void createOrRefreshAdapter() {
+        int listNumber = getArguments().getInt(ARGUMENT_PAGE_NUMBER);
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(getList(listNumber), this);
+        recyclerView.setAdapter(adapter);
     }
 
     public void updateGraph() {
@@ -154,6 +158,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
 
     public static FragmentRecyclerView newInstance(int position) {
         FragmentRecyclerView fragmentRecyclerView = new FragmentRecyclerView();
+
 
         Bundle arguments = new Bundle();
         arguments.putInt(ARGUMENT_PAGE_NUMBER, position);

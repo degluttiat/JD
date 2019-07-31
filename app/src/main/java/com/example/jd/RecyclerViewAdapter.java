@@ -1,11 +1,11 @@
 package com.example.jd;
 
+import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.transition.TransitionManager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,10 +46,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         viewHolder.itemImage.setImageResource(itemClass.getImage());
         viewHolder.linearLayout2.setVisibility(View.GONE);
 
+        setWeightString(viewHolder, position);
+    }
+
+    private void setWeightString(@NonNull ViewHolder viewHolder, int position) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(viewHolder.itemImage.getContext());
-        String weihgt = prefs.getString("key" + position, "0.0");
-        if (!weihgt.equals("0.0")) {
-            viewHolder.editWeight.setText(weihgt);
+        String weight = prefs.getString("key" + position, "0.0");
+        if (!weight.equals("0.0")) {
+            viewHolder.editWeight.setText(weight);
         }
     }
 
@@ -87,6 +91,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         }
 
+        @SuppressLint("ApplySharedPref")
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
@@ -102,7 +107,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(v.getContext());
                     SharedPreferences.Editor editor = prefs.edit();
                     String editText = editWeight.getText().toString();
-                    if (!editText.equals("")) {
+                    if (!editText.isEmpty()) {
                         editor.putString("key" + getAdapterPosition(), editText);
                         editor.commit();
                         fragmentRecyclerView.updateGraph();

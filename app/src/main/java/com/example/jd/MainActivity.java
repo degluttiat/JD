@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements PlansFragment.MyF
     @Override
     public void onBtnClick(int i) {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, FragmentRecyclerView.newInstance(i))
+                .replace(R.id.container, FragmentRecyclerView.newInstance(i), "RecFragTag")
                 .addToBackStack(null)
                 .commit();
     }
@@ -52,13 +52,18 @@ public class MainActivity extends AppCompatActivity implements PlansFragment.MyF
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_settings:
+                FragmentRecyclerView fragment = (FragmentRecyclerView) getSupportFragmentManager().findFragmentByTag("RecFragTag");
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
                 SharedPreferences.Editor editor = prefs.edit();
                 for (int i = 0; i < 14; i++) {
-                    if (prefs.contains("key" + i)){
+                    if (prefs.contains("key" + i)) {
                         editor.remove("key" + i);
                         editor.commit();
                     }
+                }
+                if (fragment != null) {
+                    fragment.updateGraph();
+                    fragment.createOrRefreshAdapter();
                 }
                 return true;
 
