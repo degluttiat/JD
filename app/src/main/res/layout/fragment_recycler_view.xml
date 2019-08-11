@@ -20,7 +20,8 @@
         <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/chart"
             android:layout_width="match_parent"
-            android:layout_height="200dip" />
+            android:layout_height="200dip"
+            android:background="#FFFFFF"/>
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

@@ -6,15 +6,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.LinearLayout;
 
 public class PlansFragment extends Fragment implements View.OnClickListener {
 
     MyFragmentCallBack myFragmentCallBack;
-    Button button1;
-    Button button2;
-    Button button3;
-    Button button4;
+    LinearLayout button1;
+    LinearLayout button2;
+    LinearLayout button3;
+    LinearLayout button4;
 
     public static PlansFragment newInstance() {
         PlansFragment fragment = new PlansFragment();

@@ -35,7 +35,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Breakfast"
+                android:text="@string/breakfast"
                 android:textStyle="bold" />
 
 
@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lunch"
+                android:text="@string/lunch"
                 android:textStyle="bold" />
 
             <TextView
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Supper"
+                android:text="@string/supper"
                 android:textStyle="bold" />
 
             <TextView
@@ -84,7 +84,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Введите ваш вес: " />
+            android:text="@string/editWeight" />
 
         <EditText
             android:id="@+id/editWeight"
@@ -94,13 +94,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" кг   "/>
+            android:text="@string/kg"/>
 
         <Button
             android:id="@+id/buttonOk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OK"/>
+            android:text="@string/ok"/>
 
 
     </LinearLayout>

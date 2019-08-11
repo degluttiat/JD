@@ -143,29 +143,15 @@
     <string name="supper4_5">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
     <string name="supper4_6">2 boiled eggs, grated fresh carrot with vegetable oil</string>
     <string name="supper4_7">Any version of the dinner from the diet of the previous days</string>
-    <string name="about">Японская диета - это очень эффективная, низкокалорийная белковая диета. Поскольку она вернет к жизни ваш метаболизм, все скинутые за эти дни килограммы очень долго - возможно, никогда! - к вам не вернутся!/n/n
-
-        Именно в этом главный (но не единственный) плюс японской диеты. А минус в ней только один - организму будет не хватать витаминов, поэтому рекомендуется все дни диеты принимать витамины в таблетках./n/n
-
-        Не рекомендуется придерживаться этой диеты чаще одного раза в год, а людям с проблемами почек, сердечно-сосудистой системы или печени эта диета и вовсе противопоказана./n/n
-
-        Запрещённые продукты:/n
-        - соль/n
-        - приправы и соусы/n
-        - бананы и другие очень сладкие фрукты/n
-        - жирное мясо/n
-        - жирная рыба/n
-        - мучные изделия/n
-        - молоко/n
-        - алкоголь/n
-        - газированные напитки/n/n
-
-        Обратите внимание:/n
-        - можно заменять кофе на зелёный чай./n
-        - в течении дня обязательно пить много воды!/n/n
-
-        Правильный выход из диеты:/n
-        Продолжайте есть небольшими порциями и употребляйте в пищу те продукты, которые предписаны диетой, но при этом добавляйте каждый день по одному новому продукту. В первый день выхода советуем добавить кашу (гречневую или овсяную)./n/n
-
-        Результаты:   минус 6-10 кг</string>
+    <string name="about">Japanese diet is a very effective, low-calorie, protein-rich diet. Since it will get your metabolism back to life, all the weight lost during this period is not expected to return anytime soon, if ever.\n\nThis is exactly the main (but not only) advantage of the Japanese diet. The diet’s only disadvantage is that your organism will have a shortage of vitamins, hence it’s recommended to use vitamin supplements.\n\nIt’s not recommended to have this diet more often than once a year. Thosу who have kidneys, heart and cardio-vascular system, or liver related issues, should avoid it altogether.\n\nProhibited products:\n-Salt\n-Spices and sauces\n-Bananas and other very sweet fruits\n-Fat rich meat\n-Fat rich fish\n-Flour products\n-Milk\n-Alcohol\n-Carbonated drinks\n\nKeep in mind:\n-Coffee can be replaced with green tea\n-During the day, you must drink a lot of water!\n\nHow to finish the diet right?\nKeep eating small portions of food and eat the products that are included in the diet, but start adding one new product each day. During the first day after the diet, adding porridge (quacker or buckwheat-based).\n\nExpected results - loss of 6-10 kg.</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="supper">Supper</string>
+    <string name="editWeight">enter your weight:</string>
+    <string name="kg">"kg   "</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="_7_days_diet">7 days diet</string>
+    <string name="_9_days_diet">9 days diet</string>
+    <string name="_13_days_diet">13 days diet</string>
+    <string name="_14_days_diet">14 days diet</string>
 </resources>
