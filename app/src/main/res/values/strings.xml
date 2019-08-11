@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Japanese Diet</string>
+    <string name="app_name" translatable="false">Japanese Diet</string>
 
     <string name="breakfast1">Black coffee with no sugar</string>
     <string name="breakfast2">Black coffee with no sugar and a piece of toasted rye bread</string>

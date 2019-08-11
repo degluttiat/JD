@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Японская диета</string>
 
     <string name="breakfast1">Черный кофе без сахара</string>
     <string name="breakfast2">Черный кофе без сахара и сухарик (ломтик ржаного хлеба, подсушенном в тостере)</string>
@@ -154,4 +153,5 @@
     <string name="_7_days_diet">7 дневная диета</string>
     <string name="_9_days_diet">9 дневная диета</string>
     <string name="editWeight">Введите ваш вес:</string>
+    <string name="breakfast">Завтрак</string>
 </resources>

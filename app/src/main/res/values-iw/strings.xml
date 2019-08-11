@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">דיאטה יפנית</string>
 
     <string name="breakfast1">קפה שחור ללא סוכר</string>
     <string name="breakfast2">Черный кофе без сахара и сухарик (ломтик ржаного хлеба, подсушенном в тостере)</string>
