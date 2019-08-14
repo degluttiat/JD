@@ -1,10 +1,12 @@
 package com.example.jd;
 
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -28,6 +30,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
     public static final String ARGUMENT_PAGE_NUMBER = "ARGUMENT_PAGE_NUMBER";
     private LineChart chart;
     private RecyclerView recyclerView;
+    Boolean choice = true;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -52,6 +55,29 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
 
         chart = rootView.findViewById(R.id.chart);
         updateGraph();
+
+        if (choice) {
+            final String[] catNamesArray = {"Васька"};
+            AlertDialog.Builder builder = new AlertDialog.Builder(recyclerView.getContext());
+            builder.setTitle("Важное сообщение!")
+                    .setCancelable(false)
+                    .setMultiChoiceItems(catNamesArray, null,
+                            new DialogInterface.OnMultiChoiceClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog,
+                                                    int item, boolean isChecked) {
+
+                                }
+                            })
+                    .setNegativeButton("ОК, иду на кухню",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.cancel();
+                                }
+                            });
+            AlertDialog alert = builder.create();
+            alert.show();
+        }
 
         return rootView;
     }
