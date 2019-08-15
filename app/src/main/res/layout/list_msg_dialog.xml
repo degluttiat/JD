@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="3dp">
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:paddingTop="15dp"
+        android:text="1. Кликнув на любой из дней, вы обнаружите, что под ним открылось дополнительное окно, в котором вам предлагается указать вес тела в указанный промежуток времени. Эти данные тут же появятся на диаграмме в нижней части страницы.
+\n\n2. Если захотите обнулить диаграмму, то в верхнем правом углу приложения есть значок меню, нажмите на него, а затем выберите указание - обнулить данные графика"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:text="Больше не показывать"
+        android:layoutDirection="rtl"
+        />
+
+    <!--<ListView
+        android:id="@+id/lv_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" />-->
+
+</LinearLayout>

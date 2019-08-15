@@ -28,14 +28,16 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:gravity="left"
-                android:text="@string/_7_days_diet" />
+                android:text="@string/_7_days_diet"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
                 android:gravity="left"
-                android:text="vfdvfd" />
+                android:text="Самая короткая из диет этой серии, подходит тем, кто хочет сбросить пару килограмм в немыслимо короткий срок"
+                android:textSize="13sp" />
 
         </LinearLayout>
 
@@ -65,14 +67,16 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:gravity="left"
-                android:text="@string/_9_days_diet" />
+                android:text="@string/_9_days_diet"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
                 android:gravity="left"
-                android:text="vfdvfd" />
+                android:text="Немного больше дней и ограничений, подойдет тому, кто хочет добиться, кроме снижения веса, еще и улучшения самочувствия."
+                android:textSize="13sp" />
 
         </LinearLayout>
 
@@ -102,14 +106,16 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:gravity="left"
-                android:text="@string/_13_days_diet" />
+                android:text="@string/_13_days_diet"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
                 android:gravity="left"
-                android:text="vfdvfd" />
+                android:text="Подходит тем, кто уверен в себе и не сомневается, что справится со всеми сложностями, поскольку стремится получить основательные изменения."
+                android:textSize="13sp" />
 
         </LinearLayout>
 
@@ -140,14 +146,16 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:gravity="left"
-                android:text="@string/_14_days_diet" />
+                android:text="@string/_14_days_diet"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
                 android:gravity="left"
-                android:text="vfdvfd" />
+                android:text="Самая сложная диета, но и самая эффективная в отношении снижения веса."
+                android:textSize="13sp" />
 
         </LinearLayout>
 

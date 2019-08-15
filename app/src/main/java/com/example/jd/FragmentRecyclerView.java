@@ -1,5 +1,6 @@
 package com.example.jd;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -13,6 +14,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
@@ -56,30 +63,37 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         chart = rootView.findViewById(R.id.chart);
         updateGraph();
 
-        if (choice) {
-            final String[] catNamesArray = {"Васька"};
-            AlertDialog.Builder builder = new AlertDialog.Builder(recyclerView.getContext());
-            builder.setTitle("Важное сообщение!")
-                    .setCancelable(false)
-                    .setMultiChoiceItems(catNamesArray, null,
-                            new DialogInterface.OnMultiChoiceClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog,
-                                                    int item, boolean isChecked) {
-
-                                }
-                            })
-                    .setNegativeButton("ОК, иду на кухню",
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int id) {
-                                    dialog.cancel();
-                                }
-                            });
-            AlertDialog alert = builder.create();
-            alert.show();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+        if(!prefs.contains("checked")) {
+            setAlertDialog();
         }
 
         return rootView;
+    }
+
+    private void setAlertDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(recyclerView.getContext());
+        View content = getLayoutInflater().inflate(R.layout.list_msg_dialog, null);
+
+        final CheckBox checkBox = content.findViewById(R.id.checkBoxId);
+
+        builder.setTitle("Важно!");
+        builder.setView(content);
+        builder.setNegativeButton("OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        if (checkBox.isChecked()) {
+                            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+                            SharedPreferences.Editor editor = prefs.edit();
+                            editor.putBoolean("checked", true);
+                            editor.commit();
+                        }
+                        dialog.cancel();
+                    }
+                });
+        final AlertDialog dialog = builder.create();
+
+        dialog.show();
     }
 
     public void createOrRefreshAdapter() {
