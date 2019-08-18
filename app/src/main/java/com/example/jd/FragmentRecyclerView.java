@@ -77,7 +77,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
 
         final CheckBox checkBox = content.findViewById(R.id.checkBoxId);
 
-        builder.setTitle("Важно!");
+        builder.setTitle(R.string.important);
         builder.setView(content);
         builder.setNegativeButton("OK",
                 new DialogInterface.OnClickListener() {

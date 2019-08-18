@@ -11,8 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:paddingTop="15dp"
-        android:text="1. Кликнув на любой из дней, вы обнаружите, что под ним открылось дополнительное окно, в котором вам предлагается указать вес тела в указанный промежуток времени. Эти данные тут же появятся на диаграмме в нижней части страницы.
-\n\n2. Если захотите обнулить диаграмму, то в верхнем правом углу приложения есть значок меню, нажмите на него, а затем выберите указание - обнулить данные графика"
+        android:text="@string/_1_by_clicking_on"
         android:textAppearance="?android:attr/textAppearanceListItem"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
@@ -24,7 +23,7 @@
         android:layout_marginTop="15dp"
         android:layout_margin="15dp"
         android:textSize="18sp"
-        android:text="Больше не показывать"
+        android:text="@string/don_t_show_again"
         android:layoutDirection="rtl"
         />
 

@@ -2,17 +2,17 @@
 <resources>
 
     <string name="breakfast1">קפה שחור ללא סוכר</string>
-    <string name="breakfast2">קפה שחור ללא סוכר וטוסט מפרוסת לחם שיפון</string>
+    <string name="breakfast2">קפה שחור ללא סוכר וצנים יבש מפרוסת לחם שיפון</string>
     <string name="breakfast3">קפה שחור ללא סוכר</string>
-    <string name="breakfast4">קפה שחור ללא סוכר וטוסט מפרוסת לחם שיפון</string>
+    <string name="breakfast4">קפה שחור ללא סוכר וצנים יבש מפרוסת לחם שיפון</string>
     <string name="breakfast5">1 גזר מגורד גולמי מתובל במיץ לימון</string>
     <string name="breakfast6">קפה שחור ללא סוכר</string>
     <string name="breakfast7">תה ירוק ללא סוכר</string>
     <string name="breakfast8">תה ירוק ללא סוכר</string>
     <string name="breakfast9">קפה שחור ללא סוכר</string>
     <string name="breakfast10">1 גזר מגורד גולמי מתובל במיץ לימון</string>
-    <string name="breakfast11">קפה שחור ללא סוכר וטוסט מפרוסת לחם שיפון</string>
-    <string name="breakfast12">קפה שחור ללא סוכר וטוסט מפרוסת לחם שיפון</string>
+    <string name="breakfast11">קפה שחור ללא סוכר וצנים יבש מפרוסת לחם שיפון</string>
+    <string name="breakfast12">קפה שחור ללא סוכר וצנים יבש מפרוסת לחם שיפון</string>
     <string name="breakfast13">קפה שחור ללא סוכר</string>
     <string name="breakfast14">קפה שחור ללא סוכר</string>
 
@@ -46,10 +46,9 @@
     <string name="supper13">דג מבושל או מאודה (200 גרם)</string>
     <string name="supper14">בקר מבושל (200 גרם) וכוס רויון</string>
 
-
     <string name="breakfast2_1">קפה שחור ללא סוכר</string>
-    <string name="breakfast2_2">קפה שחור ללא סוכר וטוסט מפרוסת לחם שיפון</string>
-    <string name="breakfast2_3">קפה שחור ללא סוכר וטוסט מפרוסת לחם שיפון</string>
+    <string name="breakfast2_2">קפה שחור ללא סוכר וצנים יבש מפרוסת לחם שיפון</string>
+    <string name="breakfast2_3">קפה שחור ללא סוכר וצנים יבש מפרוסת לחם שיפון</string>
     <string name="breakfast2_4">קפה שחור ללא סוכר</string>
     <string name="breakfast2_5">1 גזר מגורד גולמי מתובל במיץ לימון</string>
     <string name="breakfast2_6">קפה שחור ללא סוכר</string>
@@ -57,8 +56,8 @@
     <string name="breakfast2_8">קפה שחור ללא סוכר</string>
     <string name="breakfast2_9">1 גזר מגורד גולמי מתובל במיץ לימון</string>
     <string name="breakfast2_10">קפה שחור ללא סוכר</string>
-    <string name="breakfast2_11">קפה שחור ללא סוכר וטוסט מפרוסת לחם שיפון</string>
-    <string name="breakfast2_12">קפה שחור ללא סוכר וטוסט מפרוסת לחם שיפון</string>
+    <string name="breakfast2_11">קפה שחור ללא סוכר וצנים יבש מפרוסת לחם שיפון</string>
+    <string name="breakfast2_12">קפה שחור ללא סוכר וצנים יבש מפרוסת לחם שיפון</string>
     <string name="breakfast2_13">קפה שחור ללא סוכר</string>
 
     <string name="lunch2_1">2 ביצים מבושלות, כרוב טרי עם שמן צמחי וכוס מיץ עגבניות</string>
@@ -89,11 +88,10 @@
     <string name="supper2_12">בקר מבושל (100 גרם) וכוס רויון</string>
     <string name="supper2_13">2 ביצים מבושלות, כרוב מבושל עם שמן צמחי וכוס מיץ עגבניות</string>
 
-
     <string name="breakfast3_1">קפה שחור ללא סוכר</string>
-    <string name="breakfast3_2">קפה שחור ללא סוכר וטוסט מפרוסת לחם שיפון</string>
+    <string name="breakfast3_2">קפה שחור ללא סוכר וצנים יבש מפרוסת לחם שיפון</string>
     <string name="breakfast3_3">קפה שחור ללא סוכר</string>
-    <string name="breakfast3_4">קפה שחור ללא סוכר וטוסט מפרוסת לחם שיפון</string>
+    <string name="breakfast3_4">קפה שחור ללא סוכר וצנים יבש מפרוסת לחם שיפון</string>
     <string name="breakfast3_5">1 גזר מגורד גולמי מתובל במיץ לימון</string>
     <string name="breakfast3_6">קפה שחור ללא סוכר</string>
     <string name="breakfast3_7">תה ירוק ללא סוכר</string>
@@ -121,9 +119,9 @@
     <string name="supper3_9">200 גרם גזר מגורד עם שמן צמחי</string>
 
     <string name="breakfast4_1">קפה שחור ללא סוכר</string>
-    <string name="breakfast4_2">קפה שחור ללא סוכר וטוסט מפרוסת לחם שיפון</string>
+    <string name="breakfast4_2">קפה שחור ללא סוכר וצנים יבש מפרוסת לחם שיפון</string>
     <string name="breakfast4_3">קפה שחור ללא סוכר</string>
-    <string name="breakfast4_4">קפה שחור ללא סוכר וטוסט מפרוסת לחם שיפון</string>
+    <string name="breakfast4_4">קפה שחור ללא סוכר וצנים יבש מפרוסת לחם שיפון</string>
     <string name="breakfast4_5">1 גזר מגורד גולמי מתובל במיץ לימון</string>
     <string name="breakfast4_6">קפה שחור ללא סוכר</string>
     <string name="breakfast4_7">תה ירוק ללא סוכר</string>
@@ -155,4 +153,11 @@
     <string name="_14_days_diet">דיאטת 14 ימים</string>
     <string name="editWeight">הזן את המשקל שלך:</string>
     <string name="reset_chart_data">אפס נתוני תרשים</string>
+    <string name="a_few_more_days">כמה ימים יותר ויותר מגבלות. מתאים למי שרוצה להשיג הרגשה כללית טובה יותר בנוסף לירידה במשקל</string>
+    <string name="suitable_for">מתאים לאנשים שבטוחים בעצמם ואין להם שום ספק בזה שיוכלו להתמודד עם כל הקשיים, כי הם רוצים להשיג שינוי מהותי</string>
+    <string name="the_most_difficult">הדיאטה הקשה ביותר, אך גם האפקטיבית ביותר מבחינת ירידה במשקל</string>
+    <string name="the_shortest_of">הקצרה מבין הדיאטות בסדרה זו, מתאימה למי שרוצה להוריד כמה קילוגרמים בטווח זמן קצר להפליא</string>
+    <string name="don_t_show_again">לא להציג יותר</string>
+    <string name="important">חשוב!</string>
+    <string name="_1_by_clicking_on">"1. בלחיצה על אחד מהימים, תגלו שנפתח חלון נוסף תחתיו, בו תוכלו לציין את המשקל שלכם לפרק זמן מוגדר. נתונים אלה יופיעו מייד בתרשים בתחתית העמוד.\\n\\n 2. אם ברצונך לאפס את התרשים, בפינה השמאלית העליונה של היישום יש סמל תפריט, לחץ עליו ואז בחר באפשרות - אפס נתוני תרשים "</string>
 </resources>

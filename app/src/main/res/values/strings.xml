@@ -1,20 +1,20 @@
 <resources>
     <string name="app_name" translatable="false">Japanese Diet</string>
 
-    <string name="breakfast1">Black coffee with no sugar</string>
-    <string name="breakfast2">Black coffee with no sugar and a piece of toasted rye bread</string>
-    <string name="breakfast3">Black coffee with no sugar</string>
-    <string name="breakfast4">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast1">Black sugar free coffee</string>
+    <string name="breakfast2">Black sugar free coffee and a piece of toasted rye bread</string>
+    <string name="breakfast3">Black sugar free coffee</string>
+    <string name="breakfast4">Black sugar free coffee and a piece of toasted rye bread</string>
     <string name="breakfast5">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
-    <string name="breakfast6">Black coffee with no sugar</string>
+    <string name="breakfast6">Black sugar free coffee</string>
     <string name="breakfast7">Green tea with no sugar</string>
     <string name="breakfast8">Green tea with no sugar</string>
-    <string name="breakfast9">Black coffee with no sugar</string>
+    <string name="breakfast9">Black sugar free coffee</string>
     <string name="breakfast10">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
-    <string name="breakfast11">Black coffee with no sugar and a piece of toasted rye bread</string>
-    <string name="breakfast12">Black coffee with no sugar and a piece of toasted rye bread</string>
-    <string name="breakfast13">Black coffee with no sugar</string>
-    <string name="breakfast14">Black coffee with no sugar</string>
+    <string name="breakfast11">Black sugar free coffee and a piece of toasted rye bread</string>
+    <string name="breakfast12">Black sugar free coffee and a piece of toasted rye bread</string>
+    <string name="breakfast13">Black sugar free coffee</string>
+    <string name="breakfast14">Black sugar free coffee</string>
 
     <string name="lunch1">2 boiled eggs,fresh cabbage with vegetable oil and a glass of tomato juice</string>
     <string name="lunch2">200 g of scalded or fried fish, fresh cabbage with vegetable oil</string>
@@ -46,20 +46,19 @@
     <string name="supper13">200 g of boiled or steamed fish</string>
     <string name="supper14">200 g of boiled beef with no salt and a glass of kefir</string>
 
-
-    <string name="breakfast2_1">Black coffee with no sugar</string>
-    <string name="breakfast2_2">Black coffee with no sugar and a piece of toasted rye bread</string>
-    <string name="breakfast2_3">Black coffee with no sugar and a piece of toasted rye bread</string>
-    <string name="breakfast2_4">Black coffee with no sugar</string>
+    <string name="breakfast2_1">Black sugar free coffee</string>
+    <string name="breakfast2_2">Black sugar free coffee and a piece of toasted rye bread</string>
+    <string name="breakfast2_3">Black sugar free coffee and a piece of toasted rye bread</string>
+    <string name="breakfast2_4">Black sugar free coffee</string>
     <string name="breakfast2_5">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
-    <string name="breakfast2_6">Black coffee with no sugar</string>
+    <string name="breakfast2_6">Black sugar free coffee</string>
     <string name="breakfast2_7">Green tea with no sugar</string>
-    <string name="breakfast2_8">Black coffee with no sugar</string>
+    <string name="breakfast2_8">Black sugar free coffee</string>
     <string name="breakfast2_9">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
-    <string name="breakfast2_10">Black coffee with no sugar</string>
-    <string name="breakfast2_11">Black coffee with no sugar and a piece of toasted rye bread</string>
-    <string name="breakfast2_12">Black coffee with no sugar and a piece of toasted rye bread</string>
-    <string name="breakfast2_13">Black coffee with no sugar</string>
+    <string name="breakfast2_10">Black sugar free coffee</string>
+    <string name="breakfast2_11">Black sugar free coffee and a piece of toasted rye bread</string>
+    <string name="breakfast2_12">Black sugar free coffee and a piece of toasted rye bread</string>
+    <string name="breakfast2_13">Black sugar free coffee</string>
 
     <string name="lunch2_1">2 boiled eggs, fresh cabbage with vegetable oil and a glass of tomato juice</string>
     <string name="lunch2_2">200 g of boiled or steamed fish, salad made of fresh cabbage and carrots with vegetable oil (150g)</string>
@@ -89,16 +88,15 @@
     <string name="supper2_12">100 g of boiled beef with no salt and a glass of kefir</string>
     <string name="supper2_13">2 boiled eggs, fresh cabbage with vegetable oil and a glass of tomato juice</string>
 
-
-    <string name="breakfast3_1">Black coffee with no sugar</string>
-    <string name="breakfast3_2">Black coffee with no sugar and a piece of toasted rye bread</string>
-    <string name="breakfast3_3">Black coffee with no sugar</string>
-    <string name="breakfast3_4">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast3_1">Black sugar free coffee</string>
+    <string name="breakfast3_2">Black sugar free coffee and a piece of toasted rye bread</string>
+    <string name="breakfast3_3">Black sugar free coffee</string>
+    <string name="breakfast3_4">Black sugar free coffee and a piece of toasted rye bread</string>
     <string name="breakfast3_5">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
-    <string name="breakfast3_6">Black coffee with no sugar</string>
+    <string name="breakfast3_6">Black sugar free coffee</string>
     <string name="breakfast3_7">Green tea with no sugar</string>
     <string name="breakfast3_8">Green tea with no sugar</string>
-    <string name="breakfast3_9">Black coffee with no sugar</string>
+    <string name="breakfast3_9">Black sugar free coffee</string>
 
     <string name="lunch3_1">2 boiled eggs, fresh cabbage with vegetable oil and a glass of tomato juice</string>
     <string name="lunch3_2">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
@@ -120,12 +118,12 @@
     <string name="supper3_8">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
     <string name="supper3_9">200 g grated fresh carrot with vegetable oil</string>
 
-    <string name="breakfast4_1">Black coffee with no sugar</string>
-    <string name="breakfast4_2">Black coffee with no sugar and a piece of toasted rye bread</string>
-    <string name="breakfast4_3">Black coffee with no sugar</string>
-    <string name="breakfast4_4">Black coffee with no sugar and a piece of toasted rye bread</string>
+    <string name="breakfast4_1">Black sugar free coffee</string>
+    <string name="breakfast4_2">Black sugar free coffee and a piece of toasted rye bread</string>
+    <string name="breakfast4_3">Black sugar free coffee</string>
+    <string name="breakfast4_4">Black sugar free coffee and a piece of toasted rye bread</string>
     <string name="breakfast4_5">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
-    <string name="breakfast4_6">Black coffee with no sugar</string>
+    <string name="breakfast4_6">Black sugar free coffee</string>
     <string name="breakfast4_7">Green tea with no sugar</string>
 
     <string name="lunch4_1">2 boiled eggs, fresh cabbage with vegetable oil and a glass of tomato juice</string>
@@ -156,4 +154,11 @@
     <string name="_13_days_diet">13 days diet</string>
     <string name="_14_days_diet">14 days diet</string>
     <string name="reset_chart_data">Reset chart data</string>
+    <string name="the_shortest_of">The shortest of this series of diets, suitable for those who want to lose a couple of kilograms in an incredibly short period</string>
+    <string name="a_few_more_days">A few more days and more restrictions. suitable for those who want to be healthier and feel better, on top of having a weight loss</string>
+    <string name="suitable_for">Suitable for those who are self-confident and have no doubt that they will cope with all the difficulties, as they seek to get a thorough change</string>
+    <string name="the_most_difficult">The most difficult diet, but also the most effective in terms of weight loss</string>
+    <string name="don_t_show_again">Don\'t show again</string>
+    <string name="important">Important!</string>
+    <string name="_1_by_clicking_on">1. By clicking on any of the days, you will see an additional window has opened under it, in which you can specify your weight for a specified period of time. This data will immediately appear on the chart at the bottom of the page.   2. If you want to reset the chart, in the upper right corner of the application there is a menu icon, click on it, and then select the instruction - reset chart data</string>
 </resources>
