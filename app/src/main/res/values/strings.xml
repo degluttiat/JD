@@ -143,6 +143,7 @@
     <string name="supper4_5">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
     <string name="supper4_6">2 boiled eggs, grated fresh carrot with vegetable oil</string>
     <string name="supper4_7">Any version of the dinner from the diet of the previous days</string>
+
     <string name="about">Japanese diet is a very effective, low-calorie, protein-rich diet. Since it will get your metabolism back to life, all the weight lost during this period is not expected to return anytime soon, if ever.\n\nThis is exactly the main (but not only) advantage of the Japanese diet. The diet’s only disadvantage is that your organism will have a shortage of vitamins, hence it’s recommended to use vitamin supplements.\n\nIt’s not recommended to have this diet more often than once a year. Thosу who have kidneys, heart and cardio-vascular system, or liver related issues, should avoid it altogether.\n\nProhibited products:\n-Salt\n-Spices and sauces\n-Bananas and other very sweet fruits\n-Fat rich meat\n-Fat rich fish\n-Flour products\n-Milk\n-Alcohol\n-Carbonated drinks\n\nKeep in mind:\n-Coffee can be replaced with green tea\n-During the day, you must drink a lot of water!\n\nHow to finish the diet right?\nKeep eating small portions of food and eat the products that are included in the diet, but start adding one new product each day. During the first day after the diet, adding porridge (quacker or buckwheat-based).\n\nExpected results - loss of 6-10 kg.</string>
     <string name="breakfast">Breakfast</string>
     <string name="lunch">Lunch</string>
@@ -154,4 +155,5 @@
     <string name="_9_days_diet">9 days diet</string>
     <string name="_13_days_diet">13 days diet</string>
     <string name="_14_days_diet">14 days diet</string>
+    <string name="reset_chart_data">Reset chart data</string>
 </resources>

@@ -75,7 +75,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="8dp"
                 android:gravity="left"
-                android:text="Немного больше дней и ограничений, подойдет тому, кто хочет добиться, кроме снижения веса, еще и улучшения самочувствия."
+                android:text="Немного больше дней и ограничений, подойдет тому, кто хочет добиться, кроме снижения веса, еще и улучшения самочувствия"
                 android:textSize="13sp" />
 
         </LinearLayout>
@@ -114,7 +114,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="8dp"
                 android:gravity="left"
-                android:text="Подходит тем, кто уверен в себе и не сомневается, что справится со всеми сложностями, поскольку стремится получить основательные изменения."
+                android:text="Подходит тем, кто уверен в себе и не сомневается, что справится со всеми сложностями, поскольку стремится получить основательные изменения"
                 android:textSize="13sp" />
 
         </LinearLayout>
@@ -154,7 +154,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="8dp"
                 android:gravity="left"
-                android:text="Самая сложная диета, но и самая эффективная в отношении снижения веса."
+                android:text="Самая сложная диета, но и самая эффективная в отношении снижения веса"
                 android:textSize="13sp" />
 
         </LinearLayout>
