@@ -160,5 +160,5 @@
     <string name="the_most_difficult">The most difficult diet, but also the most effective in terms of weight loss</string>
     <string name="don_t_show_again">Don\'t show again</string>
     <string name="important">Important!</string>
-    <string name="_1_by_clicking_on">1. By clicking on any of the days, you will see an additional window has opened under it, in which you can specify your weight for a specified period of time. This data will immediately appear on the chart at the bottom of the page.   2. If you want to reset the chart, in the upper right corner of the application there is a menu icon, click on it, and then select the instruction - reset chart data</string>
+    <string name="_1_by_clicking_on">1. By clicking on any of the days, you will see an additional window has opened under it, in which you can specify your weight for a specified period of time. This data will immediately appear on the chart at the bottom of the page.   n\n\2. If you want to reset the chart, in the upper right corner of the application there is a menu icon, click on it, and then select the instruction - reset chart data</string>
 </resources>

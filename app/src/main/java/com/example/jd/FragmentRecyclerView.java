@@ -71,7 +71,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         return rootView;
     }
 
-    private void setAlertDialog() {
+    public void setAlertDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(recyclerView.getContext());
         View content = getLayoutInflater().inflate(R.layout.list_msg_dialog, null);
 

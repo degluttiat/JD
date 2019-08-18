@@ -66,6 +66,9 @@ public class MainActivity extends AppCompatActivity implements PlansFragment.MyF
                     fragment.createOrRefreshAdapter();
                 }
                 return true;
+            case R.id.how_to_use:
+                FragmentRecyclerView fragment2 = (FragmentRecyclerView) getSupportFragmentManager().findFragmentByTag("RecFragTag");
+                fragment2.setAlertDialog();
 
             default:
                 return super.onOptionsItemSelected(item);
