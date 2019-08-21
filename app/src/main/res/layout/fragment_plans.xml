@@ -2,44 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:background="#fafafa"
+        android:orientation="horizontal"
+        android:paddingRight="8dp">
 
         <ImageView
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
-            android:src="@drawable/apples" />
+            android:src="@drawable/days7" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/the_shortest_of"
+            android:textSize="15sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:gravity="left"
-                android:text="@string/_7_days_diet"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="8dp"
-                android:gravity="left"
-                android:text="@string/the_shortest_of"
-                android:textSize="13sp" />
-
-        </LinearLayout>
 
     </LinearLayout>
 
@@ -47,38 +36,26 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:background="#fafafa"
+        android:orientation="horizontal"
+        android:paddingRight="8dp">
 
         <ImageView
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
-            android:src="@drawable/apples" />
+            android:src="@drawable/days9" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/a_few_more_days"
+            android:textSize="15sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:gravity="left"
-                android:text="@string/_9_days_diet"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="8dp"
-                android:gravity="left"
-                android:text="@string/a_few_more_days"
-                android:textSize="13sp" />
-
-        </LinearLayout>
 
     </LinearLayout>
 
@@ -86,38 +63,26 @@
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:background="#fafafa"
+        android:orientation="horizontal"
+        android:paddingRight="8dp">
 
         <ImageView
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
-            android:src="@drawable/apples" />
+            android:src="@drawable/days13" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/suitable_for"
+            android:textSize="15sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:gravity="left"
-                android:text="@string/_13_days_diet"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="8dp"
-                android:gravity="left"
-                android:text="@string/suitable_for"
-                android:textSize="13sp" />
-
-        </LinearLayout>
 
     </LinearLayout>
 
@@ -125,39 +90,27 @@
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:background="#fafafa"
+        android:orientation="horizontal"
+        android:paddingRight="8dp">
 
         <ImageView
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
-            android:src="@drawable/apples" />
+            android:src="@drawable/days14" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/the_most_difficult"
+            android:textSize="15sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:gravity="left"
-                android:text="@string/_14_days_diet"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="8dp"
-                android:gravity="left"
-                android:text="@string/the_most_difficult"
-                android:textSize="13sp" />
-
-        </LinearLayout>
 
     </LinearLayout>
 

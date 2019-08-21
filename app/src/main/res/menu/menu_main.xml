@@ -12,6 +12,6 @@
     <item
         android:id="@+id/how_to_use"
         android:orderInCategory="100"
-        android:title="how to use?"
+        android:title="Как пользоваться?"
         app:showAsAction="never" />
 </menu>
