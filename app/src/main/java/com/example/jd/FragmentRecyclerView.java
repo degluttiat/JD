@@ -1,6 +1,5 @@
 package com.example.jd;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -14,20 +13,17 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
+import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +33,6 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
     public static final String ARGUMENT_PAGE_NUMBER = "ARGUMENT_PAGE_NUMBER";
     private LineChart chart;
     private RecyclerView recyclerView;
-    Boolean choice = true;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -61,14 +56,23 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         createOrRefreshAdapter();
 
         chart = rootView.findViewById(R.id.chart);
+
+        setDescription();
         updateGraph();
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
-        if(!prefs.contains("checked")) {
+        if (!prefs.contains("checked")) {
             setAlertDialog();
         }
 
         return rootView;
+    }
+
+    private void setDescription() {
+        Description description = new Description();
+        description.setTextSize(15);
+        description.setText("Chart");
+        chart.setDescription(description);
     }
 
     public void setAlertDialog() {
