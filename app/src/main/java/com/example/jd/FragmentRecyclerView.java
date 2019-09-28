@@ -23,7 +23,6 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
-import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,8 +70,10 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
     private void setDescription() {
         Description description = new Description();
         description.setTextSize(15);
-        description.setText("Chart");
+        description.setText(getString(R.string.chart));
+        //chart.setNoDataText("Chart is empty");
         chart.setDescription(description);
+        //chart.setDrawGridBackground(true);
     }
 
     public void setAlertDialog() {
@@ -120,7 +121,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
             }
         }
 
-        LineDataSet dataSet = new LineDataSet(entries, "Weight");
+        LineDataSet dataSet = new LineDataSet(entries, getString(R.string.chartWeight));
 
         IAxisValueFormatter formatter = new IAxisValueFormatter() {
 
