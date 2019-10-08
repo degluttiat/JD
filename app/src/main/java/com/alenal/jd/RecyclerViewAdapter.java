@@ -1,4 +1,4 @@
-package com.example.jd;
+package com.alenal.jd;
 
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;

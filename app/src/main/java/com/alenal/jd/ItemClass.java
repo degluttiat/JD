@@ -1,4 +1,4 @@
-package com.example.jd;
+package com.alenal.jd;
 
 public class ItemClass {
     String textBreakfast;

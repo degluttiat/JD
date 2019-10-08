@@ -1,4 +1,4 @@
-package com.example.jd;
+package com.alenal.jd;
 
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 
+import com.alenal.jd.R;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.Description;
@@ -71,7 +72,6 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         Description description = new Description();
         description.setTextSize(15);
         description.setText(getString(R.string.chart));
-        //chart.setNoDataText("Chart is empty");
         chart.setDescription(description);
         //chart.setDrawGridBackground(true);
     }
@@ -139,6 +139,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         LineData lineData = new LineData(dataSet);
         chart.setData(lineData);
         chart.setDrawBorders(true);
+        chart.setNoDataText("Chart is empty");
         chart.invalidate(); // refresh
 
     }

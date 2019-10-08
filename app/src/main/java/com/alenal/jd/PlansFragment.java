@@ -1,4 +1,4 @@
-package com.example.jd;
+package com.alenal.jd;
 
 import android.content.Context;
 import android.os.Bundle;

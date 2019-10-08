@@ -1,4 +1,4 @@
-package com.example.jd;
+package com.alenal.jd;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
