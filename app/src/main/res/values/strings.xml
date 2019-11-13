@@ -7,8 +7,8 @@
     <string name="breakfast4">Black sugar free coffee and a piece of toasted rye bread</string>
     <string name="breakfast5">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
     <string name="breakfast6">Black sugar free coffee</string>
-    <string name="breakfast7">Green tea with no sugar</string>
-    <string name="breakfast8">Green tea with no sugar</string>
+    <string name="breakfast7">Green sugar free tea</string>
+    <string name="breakfast8">Green sugar free tea</string>
     <string name="breakfast9">Black sugar free coffee</string>
     <string name="breakfast10">Grated fresh carrot (medium sized) with lemon juice (squeezed from one lemon)</string>
     <string name="breakfast11">Black sugar free coffee and a piece of toasted rye bread</string>
@@ -21,9 +21,9 @@
     <string name="lunch3">Courgettes/aubergines fried with vegetable oil, quantity does not matter</string>
     <string name="lunch4">200 g of boiled or steamed fish and a glass of tomato juice</string>
     <string name="lunch5">500 g of boiled or steamed fish and a glass of tomato juice</string>
-    <string name="lunch6">500g of boiled chicken with no salt with a salad made of fresh cabbage and carrots with vegetable oil</string>
-    <string name="lunch7">200 g of boiled beef with no salt, 200g of any fruits</string>
-    <string name="lunch8">200 g of boiled beef with no salt, 200g of any fruits</string>
+    <string name="lunch6">500 g of boiled chicken with no salt with a salad made of fresh cabbage and carrots with vegetable oil</string>
+    <string name="lunch7">200 g of boiled beef with no salt, 200 g of any fruits</string>
+    <string name="lunch8">200 g of boiled beef with no salt, 200 g of any fruits</string>
     <string name="lunch9">50g of cheese, three small carrots with vegetable oil and one boiled egg</string>
     <string name="lunch10">200 g of boiled or steamed fish and a glass of tomato juice</string>
     <string name="lunch11">Courgettes/aubergines fried with vegetable oil, quantity does not matter</string>
@@ -34,15 +34,15 @@
     <string name="supper1">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
     <string name="supper2">200 g of boiled beef with no salt and a glass of kefir</string>
     <string name="supper3">200 g of boiled beef with no salt, raw cabbage with vegetable oil and two boiled eggs</string>
-    <string name="supper4">200g of any fruits</string>
-    <string name="supper5">200g of any fruits</string>
+    <string name="supper4">200 g of any fruits</string>
+    <string name="supper5">200 g of any fruits</string>
     <string name="supper6">fresh small sized carrot with vegetable oil and two boiled eggs</string>
     <string name="supper7">Any version of the dinner from the diet of the previous days (except the third)</string>
     <string name="supper8">Any version of the dinner from the diet of the previous days (except the third)</string>
-    <string name="supper9">200g of any fruits</string>
-    <string name="supper10">200g of any fruits</string>
+    <string name="supper9">200 g of any fruits</string>
+    <string name="supper10">200 g of any fruits</string>
     <string name="supper11">200 g of boiled beef with no salt, a glass of kefir</string>
-    <string name="supper12">200g of any fruits</string>
+    <string name="supper12">200 g of any fruits</string>
     <string name="supper13">200 g of boiled or steamed fish</string>
     <string name="supper14">200 g of boiled beef with no salt and a glass of kefir</string>
 
@@ -77,13 +77,13 @@
     <string name="supper2_1">200 g of boiled or steamed fish</string>
     <string name="supper2_2">100 g of boiled beef with no salt and a glass of tomato juice</string>
     <string name="supper2_3">200 g of boiled beef with no salt, raw cabbage with vegetable oil and two boiled eggs</string>
-    <string name="supper2_4">200g of any fruits</string>
-    <string name="supper2_5">200g of any fruits</string>
+    <string name="supper2_4">200 g of any fruits</string>
+    <string name="supper2_5">200 g of any fruits</string>
     <string name="supper2_6">2 boiled eggs, 100 g grated fresh carrot with vegetable oil</string>
     <string name="supper2_7">2 boiled eggs, 100 g grated fresh carrot with vegetable oil</string>
     <string name="supper2_8">2 boiled eggs, 150 g grated fresh carrot with vegetable oil</string>
-    <string name="supper2_9">200g of any fruits</string>
-    <string name="supper2_10">200g of any fruits</string>
+    <string name="supper2_9">200 g of any fruits</string>
+    <string name="supper2_10">200 g of any fruits</string>
     <string name="supper2_11">200 g of boiled beef with no salt, raw cabbage with vegetable oil and two boiled eggs</string>
     <string name="supper2_12">100 g of boiled beef with no salt and a glass of kefir</string>
     <string name="supper2_13">2 boiled eggs, fresh cabbage with vegetable oil and a glass of tomato juice</string>
@@ -104,7 +104,7 @@
     <string name="lunch3_4">1 courgette fried with vegetable oil, 1 apple</string>
     <string name="lunch3_5">200 g of boiled or steamed fish and a glass of tomato juice</string>
     <string name="lunch3_6">300 g of boiled chicken with no salt, salad made of fresh cabbage and carrots with vegetable oil (150g)</string>
-    <string name="lunch3_7">200 g of boiled beef with no salt, 200g of any fruits</string>
+    <string name="lunch3_7">200 g of boiled beef with no salt, 200 g of any fruits</string>
     <string name="lunch3_8">200 g of boiled beef with no salt, 2 apples or 1 orange</string>
     <string name="lunch3_9">150 g of boiled chicken with no salt, 2 boiled eggs, salad made of fresh cabbage and carrots with vegetable oil (150g)</string>
 
@@ -132,7 +132,7 @@
     <string name="lunch4_4">1 courgette fried with vegetable oil, 1 apple</string>
     <string name="lunch4_5">200 g of boiled or steamed fish and a glass of tomato juice</string>
     <string name="lunch4_6">300 g of boiled chicken with no salt, salad made of fresh cabbage and carrots with vegetable oil (150g)</string>
-    <string name="lunch4_7">200 g of boiled beef with no salt, 200g of any fruits</string>
+    <string name="lunch4_7">200 g of boiled beef with no salt, 200 g of any fruits</string>
 
     <string name="supper4_1">200 g of boiled or steamed fish, fresh cabbage with vegetable oil</string>
     <string name="supper4_2">200 g of boiled beef with no salt and a glass of kefir</string>
@@ -142,7 +142,7 @@
     <string name="supper4_6">2 boiled eggs, grated fresh carrot with vegetable oil</string>
     <string name="supper4_7">Any version of the dinner from the diet of the previous days</string>
 
-    <string name="about">Japanese diet is a very effective, low-calorie, protein-rich diet. Since it will get your metabolism back to life, all the weight lost during this period is not expected to return anytime soon, if ever.\n\nThis is exactly the main (but not only) advantage of the Japanese diet. The diet’s only disadvantage is that your organism will have a shortage of vitamins, hence it’s recommended to use vitamin supplements.\n\nIt’s not recommended to have this diet more often than once a year. Thosу who have kidneys, heart and cardio-vascular system, or liver related issues, should avoid it altogether.\n\nProhibited products:\n-Salt\n-Spices and sauces\n-Bananas and other very sweet fruits\n-Fat rich meat\n-Fat rich fish\n-Flour products\n-Milk\n-Alcohol\n-Carbonated drinks\n\nKeep in mind:\n-Coffee can be replaced with green tea\n-During the day, you must drink a lot of water!\n\nHow to finish the diet right?\nKeep eating small portions of food and eat the products that are included in the diet, but start adding one new product each day. During the first day after the diet, adding porridge (quacker or buckwheat-based).\n\nExpected results - loss of 6-10 kg.</string>
+    <string name="about">Japanese diet is a very effective, low-calorie, protein-rich diet. Since it will get your metabolism back to life, all the weight lost during this period is not expected to return anytime soon, if ever.\n\nThis is exactly the main (but not only) advantage of the Japanese diet. The diet’s only disadvantage is that your organism will have a shortage of vitamins, hence it’s recommended to use vitamin supplements.\n\nIt’s not recommended to have this diet more often than once a year. Those who have kidneys, heart and cardio-vascular system, or liver related issues, should avoid it altogether.\n\nProhibited products:\n-Salt\n-Spices and sauces\n-Bananas and other very sweet fruits\n-Fat rich meat\n-Fat rich fish\n-Flour products\n-Milk\n-Alcohol\n-Carbonated drinks\n\nKeep in mind:\n-Coffee can be replaced with green tea\n-During the day, you must drink a lot of water!\n\nHow to finish the diet right?\nKeep eating small portions of food and eat the products that are included in the diet, but start adding one new product each day. During the first day after the diet, adding porridge (quacker or buckwheat-based).\n\nExpected results - loss of 6-10 kg.</string>
     <string name="breakfast">Breakfast</string>
     <string name="lunch">Lunch</string>
     <string name="supper">Supper</string>
@@ -160,7 +160,7 @@
     <string name="the_most_difficult">The most difficult diet, but also the most effective in terms of weight loss</string>
     <string name="don_t_show_again">Don\'t show again</string>
     <string name="important">Important!</string>
-    <string name="_1_by_clicking_on">1. By clicking on any of the days, you will see an additional window has opened under it, in which you can specify your weight for a specified period of time. This data will immediately appear on the chart at the bottom of the page.   n\n\2. If you want to reset the chart, in the upper right corner of the application there is a menu icon, click on it, and then select the instruction - reset chart data</string>
+    <string name="_1_by_clicking_on">1. By clicking on any of the days, you will see an additional window opening under it, in which you can specify your weight for a specified period of time. This data will immediately appear in the chart at the bottom of the page.   \n\n2. If you want to reset the chart, in the upper right corner of the screen there is a menu icon. Click on it, and then select the instruction - reset chart data.</string>
     <string name="chart">Chart</string>
     <string name="chartWeight">Weight</string>
 </resources>
