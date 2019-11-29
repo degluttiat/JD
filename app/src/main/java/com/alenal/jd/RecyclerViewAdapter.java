@@ -1,19 +1,23 @@
 package com.alenal.jd;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.transition.TransitionManager;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -89,6 +93,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             buttonOk = itemView.findViewById(R.id.buttonOk);
             buttonOk.setOnClickListener(this);
 
+            editWeight.setOnKeyListener(new View.OnKeyListener() {
+                public boolean onKey(View v, int keyCode, KeyEvent event) {
+                    if (event.getAction() == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
+                        onBtnOkClick(v);
+                    }
+                    return false;
+                }
+            });
+
         }
 
         @SuppressLint("ApplySharedPref")
@@ -104,24 +117,35 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     }
                     break;
                 case R.id.buttonOk:
-                    SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(v.getContext());
-                    SharedPreferences.Editor editor = prefs.edit();
-                    String editText = editWeight.getText().toString();
-                    if (!editText.isEmpty()) {
-                        editor.putString("key" + getAdapterPosition(), editText);
-                        editor.commit();
-                        fragmentRecyclerView.updateGraph();
-                    } else {
-                        if (prefs.contains("key" + getAdapterPosition())){
-                            editor.remove("key" + getAdapterPosition());
-                            editor.commit();
-                            fragmentRecyclerView.updateGraph();
-                        }
-                    }
+                    onBtnOkClick(v);
                     break;
 
             }
 
+        }
+
+        private void onBtnOkClick(View v) {
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(v.getContext());
+            SharedPreferences.Editor editor = prefs.edit();
+            String editText = editWeight.getText().toString();
+            if (!editText.isEmpty()) {
+                editor.putString("key" + getAdapterPosition(), editText);
+                editor.commit();
+                fragmentRecyclerView.updateGraph();
+            } else {
+                if (prefs.contains("key" + getAdapterPosition())){
+                    editor.remove("key" + getAdapterPosition());
+                    editor.commit();
+                    fragmentRecyclerView.updateGraph();
+                }
+            }
+            InputMethodManager inputManager = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+            if (inputManager != null) {
+                inputManager.hideSoftInputFromWindow(v.getWindowToken(),InputMethodManager.HIDE_NOT_ALWAYS);
+            }
+
+            linearLayout2.setVisibility(View.GONE);
+            Toast.makeText(v.getContext(), R.string.graph_updated, Toast.LENGTH_SHORT).show();
         }
     }
 }

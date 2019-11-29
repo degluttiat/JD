@@ -1,14 +1,19 @@
 package com.alenal.jd;
 
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements PlansFragment.MyFragmentCallBack {
 
@@ -63,16 +68,42 @@ public class MainActivity extends AppCompatActivity implements PlansFragment.MyF
                 }
                 if (fragment != null) {
                     fragment.updateGraph();
+                    Toast.makeText(this, R.string.graph_cleared, Toast.LENGTH_SHORT).show();
                     fragment.createOrRefreshAdapter();
                 }
                 return true;
             case R.id.how_to_use:
-                FragmentRecyclerView fragment2 = (FragmentRecyclerView) getSupportFragmentManager().findFragmentByTag("RecFragTag");
-                fragment2.setAlertDialog();
+                createAndShowDialog();
 
             default:
                 return super.onOptionsItemSelected(item);
         }
 
+    }
+
+    public void createAndShowDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        View content = getLayoutInflater().inflate(R.layout.list_msg_dialog, null);
+
+        final CheckBox checkBox = content.findViewById(R.id.checkBoxId);
+
+        builder.setTitle(R.string.important);
+        builder.setView(content);
+        builder.setNegativeButton("OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        if (checkBox.isChecked()) {
+                            SharedPreferences prefs = PreferenceManager
+                                    .getDefaultSharedPreferences(MainActivity.this);
+                            SharedPreferences.Editor editor = prefs.edit();
+                            editor.putBoolean("checked", true);
+                            editor.commit();
+                        }
+                        dialog.cancel();
+                    }
+                });
+        final AlertDialog dialog = builder.create();
+
+        dialog.show();
     }
 }

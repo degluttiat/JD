@@ -163,4 +163,6 @@
     <string name="_1_by_clicking_on">1. By clicking on any of the days, you will see an additional window opening under it, in which you can specify your weight for a specified period of time. This data will immediately appear in the chart at the bottom of the page.   \n\n2. If you want to reset the chart, in the upper right corner of the screen there is a menu icon. Click on it, and then select the instruction - reset chart data.</string>
     <string name="chart">Chart</string>
     <string name="chartWeight">Weight</string>
+    <string name="graph_updated">Graph updated</string>
+    <string name="graph_cleared">Graph cleared</string>
 </resources>

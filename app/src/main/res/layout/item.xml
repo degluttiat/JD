@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:id="@+id/line"
     android:layout_height="wrap_content"
@@ -36,38 +37,50 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/breakfast"
-                android:textStyle="bold" />
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="SpUsage" />
 
 
             <TextView
                 android:id="@+id/textBreakfast"
                 android:layout_width="wrap_content"
+                android:textSize="14dp"
                 android:layout_height="wrap_content"
-                android:text="кусочек ржаного хлеба и кофе без сахара." />
+                android:text="кусочек ржаного хлеба и кофе без сахара."
+                tools:ignore="SpUsage" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lunch"
-                android:textStyle="bold" />
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="SpUsage" />
 
             <TextView
                 android:id="@+id/textLunch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2 вареных яйца, вареная капуста с растительным маслом и стакан томатного сока." />
+                android:textSize="14dp"
+                android:text="2 вареных яйца, вареная капуста с растительным маслом и стакан томатного сока."
+                tools:ignore="SpUsage" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/supper"
-                android:textStyle="bold" />
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="SpUsage" />
 
             <TextView
                 android:id="@+id/textSupper"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="100г вареной говядины и стакан кефира." />
+                android:textSize="14dp"
+                android:text="100г вареной говядины и стакан кефира."
+                tools:ignore="SpUsage" />
 
         </LinearLayout>
 
@@ -83,6 +96,7 @@
 
         <TextView
             android:layout_width="wrap_content"
+            android:textSize="14dp"
             android:layout_height="wrap_content"
             android:text="@string/editWeight" />
 
@@ -94,6 +108,7 @@
 
         <TextView
             android:layout_width="wrap_content"
+            android:textSize="14dp"
             android:layout_height="wrap_content"
             android:text="@string/kg"/>
 
@@ -101,6 +116,7 @@
             android:id="@+id/buttonOk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="14dp"
             android:text="@string/ok"/>
 
 

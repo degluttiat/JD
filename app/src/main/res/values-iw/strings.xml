@@ -162,4 +162,6 @@
     <string name="_1_by_clicking_on">"1. בלחיצה על אחד מהימים, תגלו שנפתח חלון נוסף תחתיו, בו תוכלו לציין את המשקל שלכם לפרק זמן מוגדר. נתונים אלה יופיעו מייד בתרשים בתחתית העמוד.2n\n\. אם ברצונך לאפס את התרשים, בפינה השמאלית העליונה של היישום יש סמל תפריט, לחץ עליו ואז בחר באפשרות - אפס נתוני תרשים "</string>
     <string name="chart">תרשים</string>
     <string name="chartWeight">משקל</string>
+    <string name="graph_updated">הגרף עודכן</string>
+    <string name="graph_cleared">הגרף אופס</string>
 </resources>

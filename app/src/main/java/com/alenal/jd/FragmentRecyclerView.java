@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
@@ -61,7 +62,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
         if (!prefs.contains("checked")) {
-            setAlertDialog();
+            createAndShowDialog();
         }
 
         return rootView;
@@ -75,7 +76,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         //chart.setDrawGridBackground(true);
     }
 
-    public void setAlertDialog() {
+    public void createAndShowDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(recyclerView.getContext());
         View content = getLayoutInflater().inflate(R.layout.list_msg_dialog, null);
 
