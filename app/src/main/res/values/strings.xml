@@ -72,7 +72,7 @@
     <string name="lunch2_10">1 boiled egg, 100 g carrot with vegetable oil, 15 g of cheese</string>
     <string name="lunch2_11">1 courgette fried with vegetable oil</string>
     <string name="lunch2_12">200 g of scalded or fried fish, fresh cabbage with vegetable oil</string>
-    <string name="lunch2_13">Dinner is not provided</string>
+    <string name="lunch2_13">2 boiled eggs, fresh cabbage with vegetable oil and a glass of tomato juice</string>
 
     <string name="supper2_1">200 g of boiled or steamed fish</string>
     <string name="supper2_2">100 g of boiled beef with no salt and a glass of tomato juice</string>
@@ -86,7 +86,7 @@
     <string name="supper2_10">200 g of any fruits</string>
     <string name="supper2_11">200 g of boiled beef with no salt, raw cabbage with vegetable oil and two boiled eggs</string>
     <string name="supper2_12">100 g of boiled beef with no salt and a glass of kefir</string>
-    <string name="supper2_13">2 boiled eggs, fresh cabbage with vegetable oil and a glass of tomato juice</string>
+    <string name="supper2_13">Dinner is not provided</string>
 
     <string name="breakfast3_1">Black sugar free coffee</string>
     <string name="breakfast3_2">Black sugar free coffee and a piece of toasted rye bread</string>
