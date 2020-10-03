@@ -164,4 +164,7 @@
     <string name="chartWeight">משקל</string>
     <string name="graph_updated">הגרף עודכן</string>
     <string name="graph_cleared">הגרף אופס</string>
+    <string name="kilograms">" ק\"ג"</string>
+    <string name="lost">"איבדת "</string>
+    <string name="gained">"עלית ב- "</string>
 </resources>

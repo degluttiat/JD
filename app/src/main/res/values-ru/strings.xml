@@ -164,4 +164,7 @@
     <string name="chartWeight">Вес</string>
     <string name="graph_updated">График обновлен</string>
     <string name="graph_cleared">График обнулен</string>
+    <string name="lost">"Вы похудели на "</string>
+    <string name="gained">"Вы поправились на "</string>
+    <string name="kilograms">" кг"</string>
 </resources>

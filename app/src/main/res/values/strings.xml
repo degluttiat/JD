@@ -165,4 +165,7 @@
     <string name="chartWeight">Weight</string>
     <string name="graph_updated">Graph updated</string>
     <string name="graph_cleared">Graph cleared</string>
+    <string name="lost">"You lost "</string>
+    <string name="kilograms">" kg"</string>
+    <string name="gained">"You gained "</string>
 </resources>

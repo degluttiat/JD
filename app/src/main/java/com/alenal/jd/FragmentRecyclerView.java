@@ -5,11 +5,13 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+
 import androidx.fragment.app.Fragment;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,7 +58,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
 
         chart = rootView.findViewById(R.id.chart);
 
-        setDescription();
+        setDescription(0);
         updateGraph();
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
@@ -67,10 +69,16 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         return rootView;
     }
 
-    private void setDescription() {
+    private void setDescription(float x) {
         Description description = new Description();
-        description.setTextSize(15);
-        description.setText(getString(R.string.chart));
+        description.setTextSize(10);
+        if (x > 0) {
+            description.setText(getString(R.string.lost) + String.valueOf(x) + getString(R.string.kilograms));
+        } else if (x < 0) {
+            description.setText(getString(R.string.gained) + Math.abs(x) + getString(R.string.kilograms));
+        } else {
+            description.setText("");
+        }
         chart.setDescription(description);
         //chart.setDrawGridBackground(true);
     }
@@ -118,6 +126,11 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
                     entries.add(new Entry(i, num));
                 }
             }
+        }
+
+        if (!entries.isEmpty()) {
+            float x = entries.get(0).getY() - entries.get(entries.size() - 1).getY();
+            setDescription(x);
         }
 
         LineDataSet dataSet = new LineDataSet(entries, getString(R.string.chartWeight));
