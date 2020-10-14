@@ -168,4 +168,6 @@
     <string name="lost">"You lost "</string>
     <string name="kilograms">" kg"</string>
     <string name="gained">"You gained "</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="buy_list">Buy List</string>
 </resources>

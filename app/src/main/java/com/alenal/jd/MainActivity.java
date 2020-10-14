@@ -57,7 +57,8 @@ public class MainActivity extends AppCompatActivity implements PlansFragment.MyF
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_settings:
-                FragmentRecyclerView fragment = (FragmentRecyclerView) getSupportFragmentManager().findFragmentByTag("RecFragTag");
+                FragmentRecyclerView fragment = (FragmentRecyclerView) getSupportFragmentManager()
+                        .findFragmentByTag("RecFragTag");
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
                 SharedPreferences.Editor editor = prefs.edit();
                 for (int i = 0; i < 14; i++) {

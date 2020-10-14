@@ -119,7 +119,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 case R.id.buttonOk:
                     onBtnOkClick(v);
                     break;
-
             }
 
         }

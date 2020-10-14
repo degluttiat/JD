@@ -12,6 +12,7 @@
     <item
         android:id="@+id/how_to_use"
         android:orderInCategory="100"
-        android:title="Как пользоваться?"
+        android:title="@string/tutorial"
         app:showAsAction="never" />
+
 </menu>

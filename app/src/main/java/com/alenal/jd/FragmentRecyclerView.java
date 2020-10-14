@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 
 import com.github.mikephil.charting.charts.LineChart;
@@ -52,7 +53,8 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
                 false);
 
         recyclerView.setLayoutManager(manager);
-        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(), DividerItemDecoration.VERTICAL));
+        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),
+                DividerItemDecoration.VERTICAL));
 
         createOrRefreshAdapter();
 
