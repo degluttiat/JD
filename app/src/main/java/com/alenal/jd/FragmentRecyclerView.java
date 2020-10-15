@@ -35,6 +35,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
     public static final String ARGUMENT_PAGE_NUMBER = "ARGUMENT_PAGE_NUMBER";
     private LineChart chart;
     private RecyclerView recyclerView;
+    private Button btnBuyList;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -67,6 +68,14 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         if (!prefs.contains("checked")) {
             createAndShowDialog();
         }
+
+        btnBuyList = rootView.findViewById(R.id.buyList);
+        btnBuyList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                createAndShowBuyListDialog();
+            }
+        });
 
         return rootView;
     }
@@ -112,7 +121,8 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
 
     public void createOrRefreshAdapter() {
         int listNumber = getArguments().getInt(ARGUMENT_PAGE_NUMBER);
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(getList(listNumber), this);
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(getList(listNumber),
+                this);
         recyclerView.setAdapter(adapter);
     }
 
@@ -156,6 +166,45 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         chart.setNoDataText("Chart is empty");
         chart.invalidate(); // refresh
 
+    }
+
+    private void createAndShowBuyListDialog() {
+        int listNumber = getArguments().getInt(ARGUMENT_PAGE_NUMBER);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(recyclerView.getContext());
+
+        builder.setTitle("Buy List");
+        builder.setMessage(getBuyList(listNumber));
+        builder.setNegativeButton("OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+
+                        dialog.cancel();
+                    }
+                });
+        final AlertDialog dialog = builder.create();
+
+        dialog.show();
+    }
+
+    private String getBuyList(int listNumber) {
+
+        String buyList = "";
+        switch (listNumber){
+            case 1:
+                buyList = getString(R.string.seven_day_buy_list);
+                break;
+            case 2:
+                buyList = getString(R.string.nine_day_buy_list);
+                break;
+            case 3:
+                buyList = getString(R.string.thirteen_day_buy_list);
+                break;
+            case 4:
+                buyList = getString(R.string.fourteen_day_buy_list);
+                break;
+        }
+        return buyList;
     }
 
     private ArrayList<ItemClass> getList(int listNumber) {
