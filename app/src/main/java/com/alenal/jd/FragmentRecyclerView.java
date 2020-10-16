@@ -1,6 +1,7 @@
 package com.alenal.jd;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -172,10 +173,24 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         int listNumber = getArguments().getInt(ARGUMENT_PAGE_NUMBER);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(recyclerView.getContext());
+        final String buyList = getBuyList(listNumber);
 
         builder.setTitle("Buy List");
-        builder.setMessage(getBuyList(listNumber));
-        builder.setNegativeButton("OK",
+        builder.setMessage(buyList);
+        builder.setNegativeButton(R.string.share,
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+
+                        Intent sendIntent = new Intent();
+                        sendIntent.setAction(Intent.ACTION_SEND);
+                        sendIntent.putExtra(Intent.EXTRA_TEXT, buyList);
+                        sendIntent.setType("text/plain");
+                        startActivity(sendIntent);
+                        dialog.cancel();
+
+                    }
+                });
+        builder.setPositiveButton("OK",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
 
