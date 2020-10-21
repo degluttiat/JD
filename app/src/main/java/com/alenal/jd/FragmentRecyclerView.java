@@ -144,6 +144,8 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         if (!entries.isEmpty()) {
             float x = entries.get(0).getY() - entries.get(entries.size() - 1).getY();
             setDescription(x);
+        } else {
+            setDescription(0);
         }
 
         LineDataSet dataSet = new LineDataSet(entries, getString(R.string.chartWeight));
@@ -164,9 +166,8 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         LineData lineData = new LineData(dataSet);
         chart.setData(lineData);
         chart.setDrawBorders(true);
-        chart.setNoDataText("Chart is empty");
+        chart.setNoDataText(getString(R.string.empty_chart));
         chart.invalidate(); // refresh
-
     }
 
     private void createAndShowBuyListDialog() {
@@ -175,7 +176,7 @@ public class FragmentRecyclerView extends Fragment implements View.OnClickListen
         AlertDialog.Builder builder = new AlertDialog.Builder(recyclerView.getContext());
         final String buyList = getBuyList(listNumber);
 
-        builder.setTitle("Buy List");
+        builder.setTitle(R.string.buy_list);
         builder.setMessage(buyList);
         builder.setNegativeButton(R.string.share,
                 new DialogInterface.OnClickListener() {

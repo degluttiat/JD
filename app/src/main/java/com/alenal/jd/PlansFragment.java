@@ -1,8 +1,11 @@
 package com.alenal.jd;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +39,12 @@ public class PlansFragment extends Fragment implements View.OnClickListener {
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
+
+        SharedPreferences prefs = PreferenceManager
+                .getDefaultSharedPreferences(requireContext());
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putInt("stopKey", 0);
+        editor.apply();
 
         return rootView;
     }

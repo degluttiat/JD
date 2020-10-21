@@ -411,4 +411,5 @@
     <string name="tutorial">מדריך</string>
     <string name="buy_list">רשימת קניות</string>
     <string name="share">שתף</string>
+    <string name="empty_chart">אין נתונים</string>
 </resources>

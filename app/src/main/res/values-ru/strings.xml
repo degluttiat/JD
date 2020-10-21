@@ -412,4 +412,5 @@
     <string name="tutorial">" Руководство"</string>
     <string name="buy_list">Cписок покупок</string>
     <string name="share">Поделиться</string>
+    <string name="empty_chart">Нет данных</string>
 </resources>

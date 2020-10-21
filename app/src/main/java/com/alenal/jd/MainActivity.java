@@ -37,10 +37,23 @@ public class MainActivity extends AppCompatActivity implements PlansFragment.MyF
 
         TabLayout tabLayout = findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(mPager);
+
+        SharedPreferences prefs = PreferenceManager
+                .getDefaultSharedPreferences(this);
+        int intFragment = prefs.getInt("stopKey", 0);
+        if (intFragment != 0){
+            onBtnClick(intFragment);
+        }
     }
 
     @Override
     public void onBtnClick(int i) {
+        SharedPreferences prefs = PreferenceManager
+                .getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putInt("stopKey", i);
+        editor.apply();
+
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, FragmentRecyclerView.newInstance(i), "RecFragTag")
                 .addToBackStack(null)
@@ -107,4 +120,5 @@ public class MainActivity extends AppCompatActivity implements PlansFragment.MyF
 
         dialog.show();
     }
+
 }

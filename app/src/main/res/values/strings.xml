@@ -414,5 +414,6 @@
 "Beef (fat-free) - 200 gr (of finished cooked product)\n"
 "Salt-free tomato juice or 1 tomato \n"</string>
     <string name="share">Share</string>
+    <string name="empty_chart">No data</string>
 
 </resources>
