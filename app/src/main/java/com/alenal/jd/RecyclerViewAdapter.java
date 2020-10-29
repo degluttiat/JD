@@ -54,7 +54,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     private void setWeightString(@NonNull ViewHolder viewHolder, int position) {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(viewHolder.itemImage.getContext());
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences
+                (viewHolder.itemImage.getContext());
         String weight = prefs.getString("key" + position, "0.0");
         if (!weight.equals("0.0")) {
             viewHolder.editWeight.setText(weight);

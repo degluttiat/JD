@@ -4,10 +4,13 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+
 import com.google.android.material.tabs.TabLayout;
+
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -41,9 +44,10 @@ public class MainActivity extends AppCompatActivity implements PlansFragment.MyF
         SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(this);
         int intFragment = prefs.getInt("stopKey", 0);
-        if (intFragment != 0){
+        if (intFragment != 0) {
             onBtnClick(intFragment);
         }
+
     }
 
     @Override
@@ -88,6 +92,12 @@ public class MainActivity extends AppCompatActivity implements PlansFragment.MyF
                 return true;
             case R.id.how_to_use:
                 createAndShowDialog();
+
+            case R.id.myProfile:
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, MyProfileFragment.newInstance())
+                        .addToBackStack(null)
+                        .commit();
 
             default:
                 return super.onOptionsItemSelected(item);

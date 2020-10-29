@@ -28,4 +28,5 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }

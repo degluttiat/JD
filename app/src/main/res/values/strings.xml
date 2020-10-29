@@ -274,7 +274,7 @@
 "Fish (white, low fat)  - 200 gr (of finished cooked product)\n"
 "Chicken (chest) - 150 gr (of finished cooked product)\n"
 "+ What you chose to eat during the 7th supper\n"</string>
-    
+
     <string name="thirteen_day_buy_list">"General\n"
 "\n"
 "Black coffee \n"
@@ -341,7 +341,7 @@
 "Beef (fat-free) - 300 gr (of finished cooked product)\n"
 "Fish (white, low fat)  - 200 gr (of finished cooked product)\n"
 "Salt-free tomato juice  or 1 tomato \n"</string>
-    
+
     <string name="fourteen_day_buy_list">"General\n"
 "\n"
 "Black coffee \n"
@@ -415,5 +415,8 @@
 "Salt-free tomato juice or 1 tomato \n"</string>
     <string name="share">Share</string>
     <string name="empty_chart">No data</string>
+    <string name="my_profile">My profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
